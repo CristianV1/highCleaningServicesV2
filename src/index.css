@@ -7,7 +7,61 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root{
+  /*COLORS*/
+  
+  --grey-color:#1a1b1b;
+  --blue-color:#47a0e2;
+
+  /*FONT-SIZES*/
+
+  --navbar-font-size: 2.1vmax;
+  --titles-font-size: 6vmax;
+  --subtitles-font-size:3vmax;
+  --plain-text-size:2vmax;
+  --subplain-text-size:1.1vmax;
+
+  --slogan-text-small:2.3vmax;
+  --slogan-text-medium:3.2vmax;
+  --slogan-text-text-box:4.4vmax;
+  --slogan-text-big: 5.8vmax;
+  
+
+  /*BOX SHADOW VALUES*/
+
+  --box-shadow-cards:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  /*IMAGE SIZES AND CONTAINERS*/
+
+  --width-container:80%;
+  --height-container : 70%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+li{
+  list-style: none;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+@media (max-width: 630px)  {
+  :root{
+    /*FONT-SIZES*/
+  
+    --navbar-font-size: 4vmin;
+    --titles-font-size: 6vmin;
+    --subtitles-font-size:3vmin;
+    --plain-text-size:2vmax;
+    --subplain-text-size:1.1vmax;
+  
+  }
+    
 }
