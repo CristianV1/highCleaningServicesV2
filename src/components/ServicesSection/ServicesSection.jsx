@@ -4,7 +4,7 @@ import image from '../../assets/services.png'
 
 export const ServicesSection = () => {
   return (
-    <div className={styles.section__container}>
+    <div id='services_section' className={styles.section__container}>
         <div className={styles.first__text__container}>
             <h3>SERVICES</h3>
             <span>HQ Cleaning Services has the most capable professionals

@@ -15,17 +15,19 @@ body {
 
   /*FONT-SIZES*/
 
-  --navbar-font-size: 2.1vmax;
-  --titles-font-size: 6vmax;
-  --subtitles-font-size:3vmax;
-  --plain-text-size:2vmax;
-  --subplain-text-size:1.1vmax;
+  --navbar-font-size: 1.5rem;
+  --titles-font-size: 4rem;
+  --subtitles-font-size:3rem;
+  --plain-text-size:2rem;
+  --subplain-text-size:1.3rem;
 
   --slogan-text-small:2.3vmax;
   --slogan-text-medium:3.2vmax;
   --slogan-text-text-box:4.4vmax;
   --slogan-text-big: 5.8vmax;
-  
+ 
+  --footer-titles-font-size: 6vmax;
+  --footer-subtitles-font-size:3vmax;
 
   /*BOX SHADOW VALUES*/
 
@@ -52,16 +54,70 @@ li{
 }
 
 
-@media (max-width: 630px)  {
+@media (max-width: 1400px)  {
   :root{
     /*FONT-SIZES*/
   
-    --navbar-font-size: 4vmin;
-    --titles-font-size: 6vmin;
-    --subtitles-font-size:3vmin;
-    --plain-text-size:2vmax;
-    --subplain-text-size:1.1vmax;
+    --subtitles-font-size:3rem;
+    --plain-text-size:1.6rem;
   
   }
     
+}
+
+
+@media (max-width: 999px)  {
+  :root{
+    /*FONT-SIZES*/
+  
+    --navbar-font-size: 1.1rem;
+
+    --plain-text-size:1.3rem;
+    
+    --titles-font-size:2.5rem;
+  
+    --subtitles-font-size:1.7rem;
+  }
+    
+}
+
+
+@media (max-width: 630px)  {
+  :root{
+    /*FONT-SIZES*/
+
+    
+    
+    --plain-text-size:1.1rem;
+    
+    --titles-font-size:1.5rem;
+    --subtitles-font-size:1.0rem;
+  
+    --subplain-text-size:0.8rem;
+
+    --plain-text-size:1.0rem;
+  
+  }
+    
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #35a7ff;
 }

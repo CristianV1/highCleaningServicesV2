@@ -14,14 +14,11 @@ const WhyUsSection = () => {
     {text:"Razonable pricing",icon:priceIcon,}
 ]
   return (
-    <section className={styles.section__container}>
+    <section id='whyus_section' className={styles.section__container}>
       <div className={styles.items__container}>
         <h3 >WHY US?</h3>
           <div className={styles.cards__container}>
-
-        
-            {items.map(item=><WhyUsCard text={item.text} icon={item.icon}/>)}
-            
+            {items.map(item=><WhyUsCard text={item.text} icon={item.icon}/>)}         
           <div className={styles.section__cards__container}>
           </div>
           </div>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg enable-background="new 0 0 102.85 289.94" version="1.1" viewBox="0 0 102.85 289.94" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.st0{fill:#1C4274;}
+	.st1{fill:#010101;}
+	.st2{fill:#020202;}
+	.st3{fill:#050505;}
+	.st4{fill:#090909;}
+	.st5{fill:#040404;}
+	.st6{fill:#101010;}
+	.st7{fill:#181818;}
+	.st8{fill:#FCFCFC;}
+	.st9{fill:#FBFBFC;}
+	.st10{fill:#FBFBFB;}
+	.st11{fill:#FAFAFA;}
+	.st12{fill:#F9F9F9;}
+	.st13{fill:#F5F5F5;}
+	.st14{fill:#FFFFFF;}
+	.st15{fill:#1A1A1A;}
+	.st16{fill:url(#a);}
+	.st17{fill:url(#SVGID_2_);}
+	.st18{fill:url(#SVGID_3_);}
+</style>
+<switch>
+	<foreignObject width="1" height="1" requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/">
+		
+	</foreignObject>
+	<g>
+		
+			<linearGradient id="a" x1="51.426" x2="51.426" y1="43.471" y2="246.47" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#fff" offset="0"/>
+				<stop stop-color="#C1C1C1" offset=".2962"/>
+				<stop stop-color="#606060" offset=".7816"/>
+				<stop stop-color="#393939" offset="1"/>
+			</linearGradient>
+			<polygon class="st16" points="49.93 246.47 51.43 43.47 52.93 246.47"/>
+		
+	</g>
+</switch>
+
+</svg>

@@ -17,18 +17,18 @@
 }
 
 .footer__first__section img{
-    width: 13vmax;
+    width: 12vmax;
 }
 
 .footer__first__section__text__container{
     display: flex;
-    font-size: var(--subtitles-font-size);
+    font-size: var(--footer-subtitles-font-size);
     text-align: center;
     flex-direction: column;
 }
 
 .footer__first__section__text__container h3{
-    font-size: var(--titles-font-size);
+    font-size: var(--footer-titles-font-size);
 }
 
 .footer__second__section{
@@ -45,7 +45,7 @@
     font-weight: bold;
     justify-content: center;
     align-items: center;
-    font-size: var(--subtitles-font-size)
+    font-size: var(--footer-subtitles-font-size)
 
 }
 
@@ -54,11 +54,11 @@
     font-weight: bold;
     justify-content: center;
     align-items: center;
-    font-size: var(--subtitles-font-size)
+    font-size: var(--footer-subtitles-font-size)
 }
 
 .last__section__text{
-    font-size: var(--subtitles-font-size);
+    font-size: var(--footer-subtitles-font-size);
     justify-self: center;
 }
 

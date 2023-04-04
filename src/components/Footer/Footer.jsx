@@ -6,7 +6,7 @@ import styles from './Footer.module.css'
 
 export const Footer = () => {
   return (
-    <div className={styles.footer__container}>
+    <div id='contactus_section' className={styles.footer__container}>
       <div className={styles.footer__max__width}>
         <div className={styles.footer__first__section}>
           <img src={contactUsImage}/>
