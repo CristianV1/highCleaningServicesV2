@@ -15,7 +15,7 @@ const AboutUsSection = React.forwardRef((props,ref) => {
             </div>
             <div className={styles.about__us__text__container}>
                 <h4>ABOUT US</h4>
-                <span>We understand how busy your life can be. For that reason, we want to make things easier for you. High quality cleaning services is a company that ains to contribute to the best customer experience providing a clean and safe environment for our clients in their homes and businesses. Let the cleaning to us and we will make sure you will love the results!
+                <span>We understand how busy your life can be. For that reason, we want to make things easier for you. High quality cleaning services is a company that aims to contribute to the best customer experience providing a clean and safe environment for our clients in their homes and businesses. Let the cleaning to us and we will make sure you will love the results!
                 </span>
             </div>
         </div>

@@ -8,8 +8,8 @@ import rateIcon from '../../assets/rate.png'
 
 
 const WhyUsSection = React.forwardRef((props,ref) => {
-    const items = [{text:"Experience team with years in the business",icon:experienceIcon,},
-    {text:"Personalized care for each customer with English speakers ready to take care of you",icon:customerIcon,},
+    const items = [{text:"Experienced team with years in the business",icon:experienceIcon,},
+    {text:"Personalized care for each customer with English and Spanish speakers ready to take care of you",icon:customerIcon,},
     {text:"Satisfaction guarantee. Customer service experience to the next level",icon:rateIcon,},
     {text:"Razonable pricing",icon:priceIcon,}
 ]

@@ -23,7 +23,7 @@ const Navbar = ({refs}) => {
 
     const [isActive,setIsActive] = useState(false);
     return (
-    <nav className={styles.navbar}>
+    <nav style={{overflow:isActive? "visible" : "hidden"}} className={styles.navbar}>
         <div className={styles.logo__container}>
             <img src={logo2}/>
             <img className={styles.logo__line} src={lineIcon}/>
@@ -32,7 +32,7 @@ const Navbar = ({refs}) => {
             <li onClick={
                 ()=>setIsActive(!isActive)
             } className={isActive ? `${styles.open__links} ${styles.active__mobile__menu}` : `${styles.open__links}` }>
-                <a><CgMoreO/></a>
+                <span><CgMoreO/></span>
             </li>
             <li className={styles.links__special__link}>
                 <a href='home_section' ref={home} onClick={(e)=>sendToSection(e,"home_section")}>
@@ -51,23 +51,24 @@ const Navbar = ({refs}) => {
         </ul>
         {isActive ? 
         <>
-        <div className={styles.mobile__background}></div>
-        <ul className={styles.mobile__links}>
-            <li>
-                <span  onClick={()=>sendToSection("home_section")}>HOME</span>
-            </li>
-            <li>
-                <span  onClick={()=>sendToSection("whyus_section")}>WHY US</span>
-            </li>
-            <li>
-                <span  onClick={()=>sendToSection("aboutus_section")}>ABOUT</span>
-            </li>
-            <li>
-                <span  onClick={()=>sendToSection("services_section")}>SERVICES</span>
-            </li> 
-        </ul></>
-        
-        : <></>    
+            <div className={styles.mobile__background}></div>
+            <ul className={styles.mobile__links}>
+                <li>
+                    <span  onClick={(e)=>sendToSection(e,"home_section")}>HOME</span>
+                </li>
+                <li>
+                    <span  onClick={(e)=>sendToSection(e,"aboutus_section")}>ABOUT</span>
+                </li>
+                <li>
+                    <span  onClick={(e)=>sendToSection(e,"whyus_section")}>WHY US</span>
+                </li>
+                <li>
+                    <span  onClick={(e)=>sendToSection(e,"services_section")}>SERVICES</span>
+                </li> 
+            </ul>
+        </>
+        : 
+        <></>    
         }
         <div className={styles.phone__container}>
             <div className={styles.phone__box}>
