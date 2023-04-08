@@ -73,8 +73,6 @@ const handleOnScroll = (e)=>{
       }
     }
 
-    console.log(current);
-
     for (const key in links) {
       let currentLink = links[key]?.current;
       currentLink?.classList.remove(navStyles.active);
