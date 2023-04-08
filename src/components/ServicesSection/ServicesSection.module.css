@@ -69,3 +69,40 @@
     width: 700px;
     top: -170px;
 }
+
+@media (max-width:1400px) {
+    .second__text__image__container img{
+        width: 500px;
+       height: 300px;
+       top: -50px;
+       right: -100px;
+    }
+}
+
+@media (max-width:820px) {
+    .second__text__image__container img{
+        width: 360px;
+       height: 230px;
+       top: -0px;
+       right: -40px;
+    }
+}
+
+@media (max-width:570px) {
+    .second__text__image__container img{
+        width: 260px;
+       height: 150px;
+       top: 50px;
+       right: -50px;
+    }
+}
+
+
+@media (max-width:570px) {
+    .second__text__image__container img{
+        width: 260px;
+       height: 150px;
+       top: 50px;
+       right: -80px;
+    }
+}

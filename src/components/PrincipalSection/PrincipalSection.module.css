@@ -164,6 +164,14 @@
         border-radius: 50%;
        
     }
+
+    .doubleline_section{
+        width: 200px;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+       
+    }
 }
 
 @media (max-width: 370px)  {

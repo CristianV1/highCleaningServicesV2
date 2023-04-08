@@ -6,9 +6,12 @@ import {CgMoreO} from 'react-icons/cg'
 import lineIcon from '../../assets/downline.svg'
 import downIcon from '../../assets/dobleline.svg'
 
-const Navbar = () => {
+const Navbar = ({refs}) => {
 
-    const sendToSection = (idName) =>{
+    const {home,about,whyus,services} = refs
+    
+    const sendToSection = (e,idName) =>{
+        e.preventDefault();
         const section = document.getElementById(idName);
         if(section){
             section.scrollIntoView({behavior:'smooth'})
@@ -29,21 +32,21 @@ const Navbar = () => {
             <li onClick={
                 ()=>setIsActive(!isActive)
             } className={isActive ? `${styles.open__links} ${styles.active__mobile__menu}` : `${styles.open__links}` }>
-                <span><CgMoreO/></span>
+                <a><CgMoreO/></a>
             </li>
             <li className={styles.links__special__link}>
-                <span  onClick={()=>sendToSection("home_section")}>
+                <a href='home_section' ref={home} onClick={(e)=>sendToSection(e,"home_section")}>
                     HOME
-                </span>
+                </a>
             </li>
             <li>
-                <span  onClick={()=>sendToSection("aboutus_section")}>ABOUT</span>
+                <a href='aboutus_section' ref={about} onClick={(e)=>sendToSection(e,"aboutus_section")}>ABOUT</a>
             </li>
             <li>
-                <span  onClick={()=>sendToSection("whyus_section")}>WHY US</span>
+                <a href='whyus_section' ref={whyus} onClick={(e)=>sendToSection(e,"whyus_section")}>WHY US</a>
             </li>
             <li>
-                <span  onClick={()=>sendToSection("services_section")}>SERVICES</span>
+                <a href='services_section' ref={services} onClick={(e)=>sendToSection(e,"services_section")}>SERVICES</a>
             </li> 
         </ul>
         {isActive ? 

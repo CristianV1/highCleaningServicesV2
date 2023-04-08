@@ -10,7 +10,7 @@ import {RiArrowLeftSFill,RiArrowRightSFill} from "react-icons/ri"
 
 import dobleLine from '../../assets/dobleline.svg'
 
-const PrincipalSection = ({ref}) => {
+const PrincipalSection = React.forwardRef((props,ref) => {
 
   const items = [photo2,photo1,photo3]
 
@@ -37,7 +37,7 @@ const PrincipalSection = ({ref}) => {
 
 
   return (
-    <section id='home_section' className={styles.principal__section__container}>
+    <section ref={ref} id='home_section' className={styles.principal__section__container}>
         <div className={styles.slogan__container}>     
             <div className={styles.slogan__text__container}> 
                 <span>Provide the best</span>
@@ -60,6 +60,6 @@ const PrincipalSection = ({ref}) => {
         <img className={styles.doubleline_section} src={dobleLine}/>
     </section>
   )
-}
+})
 
 export default PrincipalSection

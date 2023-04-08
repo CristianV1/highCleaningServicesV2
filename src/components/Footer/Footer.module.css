@@ -64,33 +64,26 @@
 
 
 
-@media (max-width: 1020px)  {
-  /*width: 100px;
+@media (max-width: 740px)  {
+
     .footer__first__section img{
-      
+        width: 7vmax;
     }
-
-    .footer__first__section__text__container{
-        font-size: 1.5rem;
-        
-    }
-
-    .footer__first__section__text__container h3{
-        font-size: 3rem;
-        
-    }
-
-    .second__section__phone__container{
-       
-        font-size: 1.5rem;
-    
+    .footer__second__section img{
+        width: 3vmax;
     }
     
-    .second__section__email__container{
-        font-size: 1.5rem;
-    }
-    
-    */
+}
 
+@media (max-width: 400px)  {
+
+    .footer__first__section img{
+        width: 4vmax;
+    }
+    .footer__second__section img{
+        width: 2.0vmax;
+    }
+
+    
     
 }
