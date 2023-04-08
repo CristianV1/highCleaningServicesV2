@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+.revealSection{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.4s ease;
+}
+
+.activeSection{
+  transform: translateY(0px);
+  opacity: 1;
+}

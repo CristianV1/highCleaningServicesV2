@@ -5,7 +5,7 @@ import PrincipalSection from '../components/PrincipalSection/PrincipalSection'
 const Home = ({ref}) => {
   return (
     <div>
-        <PrincipalSection/>
+        
     </div>
   )
 }
