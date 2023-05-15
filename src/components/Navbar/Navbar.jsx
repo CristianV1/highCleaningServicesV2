@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Navbar.module.css';
-import logo2 from '../../assets/Logov4 (2).png'
+import logo2 from '../../assets/Logov4.svg'
 import phone from '../../assets/phone.svg'
 import {CgMoreO} from 'react-icons/cg'
 import lineIcon from '../../assets/downline.svg'
