@@ -25,7 +25,7 @@ export const Footer = () => {
           <div className={styles.second__section__email__container}>
             <img src={contactUsMailImage}/>
             <span>
-              highqualitycleaningnc@gmail.com
+            hqcleaningnc@gmail.com
             </span>
           </div>
         </div>
