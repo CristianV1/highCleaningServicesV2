@@ -7,19 +7,22 @@ import { ServicesSection } from './components/ServicesSection/ServicesSection';
 import { Footer } from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import navStyles from './components/Navbar/Navbar.module.css'
-import { useEffect,useRef } from 'react';
+import { useEffect,useRef, useState } from 'react';
 import PrincipalSection from './components/PrincipalSection/PrincipalSection';
-
+import AlertComponent from './components/AlertComponent/AlertComponent';
 
 function App() {
   const homeSection = useRef(null);
   const aboutSection = useRef(null);
   const whySection = useRef(null);
   const servicesSection = useRef(null);
-   const home = useRef(null);
+  const home = useRef(null);
   const about = useRef(null);
   const whyus = useRef(null);
   const services = useRef(null);
+
+  
+  const [isOn,setIsOn] = useState(false);
 
   useEffect(()=>{
     window.addEventListener('scroll',handleOnScroll)   
@@ -96,11 +99,12 @@ const handleOnScroll = (e)=>{
 
   return (
     <div>
-      <Navbar refs={links}/>
+      <Navbar refs={links} setIsOn={setIsOn}/>
       <PrincipalSection ref={homeSection}/>
       <AboutUsSection ref={aboutSection}/>
       <WhyUsSection ref={whySection}/>
       <ServicesSection ref={servicesSection}/>
+      <AlertComponent setIsOn={setIsOn} isOn={isOn} />
       <Footer/>
     </div>
   );

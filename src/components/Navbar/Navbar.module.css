@@ -107,6 +107,7 @@
 .phone__box{
     background-color: var(--blue-color);
     color: #ffffff;
+    cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
     transition: scale 0.2s;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from './Navbar.module.css';
 import logo2 from '../../assets/Logov4.svg'
 import phone from '../../assets/phone.svg'
@@ -6,8 +6,8 @@ import {CgMoreO} from 'react-icons/cg'
 import lineIcon from '../../assets/downline.svg'
 import downIcon from '../../assets/dobleline.svg'
 
-const Navbar = ({refs}) => {
-
+const Navbar = ({refs,setIsOn}) => {
+    
     const {home,about,whyus,services} = refs
     
     const sendToSection = (e,idName) =>{
@@ -19,7 +19,37 @@ const Navbar = ({refs}) => {
         }
     }
 
-  
+    const phoneRef = useRef(null);
+
+    const phoneNumber = "215 240 9917"
+
+    const copyToClipboard = str => {
+        const el = document.createElement('textarea');  // Create a <textarea> element
+        el.value = str;                                 // Set its value to the string that you want copied
+        el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof
+        el.style.position = 'absolute';                 
+        el.style.left = '-9999px';                      // Move outside the screen to make it invisible
+        document.body.appendChild(el);                  // Append the <textarea> element to the HTML document
+        const selected =            
+          document.getSelection().rangeCount > 0        // Check if there is any content selected previously
+            ? document.getSelection().getRangeAt(0)     // Store selection if found
+            : false;                                    // Mark as false to know no selection existed before
+        el.select();                                    // Select the <textarea> content
+        document.execCommand('copy');                   // Copy - only works as a result of a user action (e.g. click events)
+        setIsOn(true);               
+        document.body.removeChild(el);                  // Remove the <textarea> element
+        if (selected) {                                 // If a selection existed before copying
+          document.getSelection().removeAllRanges();    // Unselect everything on the HTML document
+          document.getSelection().addRange(selected);   // Restore the original selection
+        }
+      };
+
+    useEffect(()=>{
+        phoneRef.current.addEventListener("click", (event)=>{
+            copyToClipboard(phoneNumber);
+        })
+    },[])
+
 
     const [isActive,setIsActive] = useState(false);
     return (
@@ -71,10 +101,14 @@ const Navbar = ({refs}) => {
         <></>    
         }
         <div className={styles.phone__container}>
-            <div className={styles.phone__box}>
+            <div onClick={()=>{
+                 //window.clipboardData.setData("Text", 'Copy this text to clipboard')
+                 //document.execCommand("copy")
+                 
+            }}  ref={phoneRef} className={styles.phone__box}>
                <img src={phone}/>
                 <span>
-                215 240 9917
+                    {phoneNumber}
                 </span>
                 
                 <img className={styles.phone__line} src={downIcon}/>
