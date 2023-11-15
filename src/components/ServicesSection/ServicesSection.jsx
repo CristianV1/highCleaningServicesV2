@@ -17,7 +17,7 @@ export const ServicesSection = React.forwardRef((props,ref) => {
                 <h5>We specialize in:</h5>
                 <ul>
                     <li>- Residential cleaning</li>
-                    <li>- Comercial cleaning</li>
+                    <li>- Commercial cleaning</li>
                     <li>- Deep cleaning (including kitchen dishes, vacum, etc.)</li>
                     <li>- Events and after party cleaning</li>
                     <li>- Builders cleaning</li>
